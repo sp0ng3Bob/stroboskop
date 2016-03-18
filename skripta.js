@@ -17,6 +17,7 @@ window.addEventListener('load', function() {
 	odstraniB.addEventListener ("click", function(e) {
 		e.preventDefault();
 		document.getElementById("barve").innerHTML = "";
+		document.getElementById("stroboskop").style.backgroundColor = "white"; //ko odstranimo barve se barva zaslona spremeni v belo
 		
 	});
 	
@@ -31,6 +32,7 @@ window.addEventListener('load', function() {
 
 		if (ustavi) {
 			ustavi = false;
+			document.getElementById("stroboskop").style.backgroundColor = "white"; //ko ustavimo stroboskop se barva spremeni v belo
 		} 
 		else {
 			var novId = (id+1) % vrednosti.length;
