@@ -17,7 +17,6 @@ window.addEventListener('load', function() {
 	odstraniB.addEventListener ("click", function(e) {
 		e.preventDefault();
 		document.getElementById("barve").innerHTML = "";
-		document.getElementById("stroboskop").style.backgroundColor = "white"; //ko odstranimo barve se barva zaslona spremeni v belo
 		
 	});
 	
